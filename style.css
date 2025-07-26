@@ -491,9 +491,9 @@
 
 @media (max-width:600px)  {
     .review-card{
-        min-width: 15rem;
+        min-width: 10rem;
         flex-wrap: wrap;
-        
+
     }
     
 }
@@ -994,6 +994,13 @@
         gap: 1rem;
       }
 
+      .email-box{
+        padding: 0.4rem 1rem;
+        margin-bottom: 6px;
+        
+      } 
+      
+      
       .form-group {
         margin-bottom: 0.5rem;
       }
