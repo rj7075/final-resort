@@ -121,7 +121,7 @@
     .menu-name{
         justify-content: flex-start;
         align-items: flex-start;
-        line-height: 5rem;
+        line-height: 4rem;
         list-style: none;
         text-align: center;
         color: #212529;
@@ -480,7 +480,8 @@
        }
 
 .review-card {
-  min-width: 300px;
+     
+  min-width: 30rem;
   flex-shrink: 0;
   background: #f9f9f9;
   padding: 1.5rem;
@@ -488,11 +489,19 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+@media (max-width:600px)  {
+    .review-card{
+        min-width: 15rem;
+        flex-wrap: wrap;
+        
+    }
+    
+}
 .review-nav {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: #000;
+  background: #e9e6e6;
   color: white;
   border: none;
   padding: 0.5rem 1rem;
