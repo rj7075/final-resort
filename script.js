@@ -38,6 +38,23 @@ function closeMenu() {
   }
 }
 
+// our Amenities Section
+
+function prevAmenity() {
+  const slider = document.getElementById("amenitySlider");
+  slider.scrollBy({ left: -330, behavior: "smooth" });
+}
+
+function nextAmenity() {
+  const slider = document.getElementById("amenitySlider");
+  slider.scrollBy({ left: 330, behavior: "smooth" });
+}
+
+function showAmenityDetails(amenity) {
+  alert(
+    `Showing details for ${amenity} amenity. In a complete implementation, this would open a detailed view or modal.`
+  );
+}
 // story section
 
 const storySlider = document.getElementById("storySlider");
@@ -223,6 +240,38 @@ const stories = {
 };
 
 // Show room details
+function showRoomDetails(roomId) {
+  const room = rooms[roomId];
+  if (!room) return;
+
+  // Populate room details
+  document.getElementById("room-title").textContent = room.title;
+  document.getElementById("room-subtitle").textContent = room.subtitle;
+  document.getElementById("room-main-img").src = room.mainImage;
+  document.getElementById("room-description").innerHTML = room.description;
+  document.getElementById("room-price").textContent = room.price;
+  document.getElementById("room-price-display").textContent =
+    room.price + " x 3 nights";
+
+  // Populate amenities
+  const amenitiesGrid = document.getElementById("room-amenities");
+  amenitiesGrid.innerHTML = "";
+  room.amenities.forEach((amenity) => {
+    const amenityItem = document.createElement("div");
+    amenityItem.className = "amenity-item";
+    amenityItem.innerHTML = `
+            <i class="fas fa-check-circle"></i>
+            <span>${amenity}</span>
+          `;
+    amenitiesGrid.appendChild(amenityItem);
+  });
+
+  // Show room details page
+  showPage("room-details");
+}
+
+// show room details from rooms page
+
 function showRoomDetails(roomId) {
   const room = rooms[roomId];
   if (!room) return;

@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paradise Resort | Luxury Getaways</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="logo" onclick="showPage('home')">Mum<span>Griham</span></div>
+
+      <!-- DeskTop Menu -->
+      <div class="nav-links">
+        <a href="/" onclick="showPage('home')">Home</a>
+        <a href="/rooms.html" onclick="showPage('home')">Rooms</a>
+
+        <!-- <a href="#reviews" onclick="showPage('home')">Client Reviews</a>
+        <a href="#gallery" onclick="showPage('home')">Gallery</a>
+        <a href="#contact" onclick="showPage('home')">Contact</a> -->
+        <a href="tel:+919999999999">
+          <button class="watsapp">Call +91 9999999999</button>
+        </a>
+      </div>
+
+      <!-- mobile menu -->
+      <!-- Hamburger Icon -->
+
+      <!-- Mobile Menu -->
+      <div class="nav-links mobile-menu" id="mobileMenu">
+        <ul class="menu-list">
+          <li class="menu-name">
+            <a href="/rooms.html" onclick="showPage('home'); closeMenu()"
+              >Rooms</a
+            >
+          </li>
+          <li class="menu-name">
+            <a
+              href="/nearattraction.html"
+              onclick="showPage('home'); closeMenu()"
+              >Near By Attraction</a
+            >
+          </li>
+          <li class="menu-name">
+            <a href="#reviews" onclick="showPage('home'); closeMenu()"
+              >Client Reviews</a
+            >
+          </li>
+          <li class="menu-name">
+            <a href="#gallery" onclick="showPage('home'); closeMenu()"
+              >Gallery</a
+            >
+          </li>
+          <li class="menu-name">
+            <a href="#contact" onclick="showPage('home'); closeMenu()"
+              >Contact</a
+            >
+          </li>
+          <li class="menu-name">
+            <a href="tel:+919999999999">
+              <button class="watsapp">Call +91 9999999999</button>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- <div class="nav-links mobile-menu">
+        <a href="#rooms" onclick="showPage('home')">Rooms</a>
+        <a href="#stories" onclick="showPage('home')">Our Stories</a>
+        <a href="#reviews" onclick="showPage('home')">Client Reviews</a>
+        <a href="#gallery" onclick="showPage('home')">Gallery</a>
+        <a href="#contact" onclick="showPage('home')">Contact</a>
+      </div> -->
+
+      <div class="hamburger" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+    <!-- <section class="hero">
+      <h1>Discover Paradise</h1>
+      <p>
+        Explore breathtaking attractions just moments away from our luxury
+        resort
+      </p>
+      <a href="#attractions" class="btn">View Attractions</a>
+    </section> -->
+
+    <!-- <div class="container"> -->
+    <section id="attractions" class="page-padding">
+      <div class="section-title">
+        <h2>Nearby Attractions</h2>
+        <p>Experience the best our tropical paradise has to offer</p>
+      </div>
+
+      <!-- <div class="map-container">
+          <div id="attractionsMap"></div>
+          <div class="map-overlay">
+            <h3>Attractions Map</h3>
+            <ul>
+              <li onclick="showMarker('beach')">
+                <i class="fas fa-umbrella-beach"></i> Sapphire Beach
+              </li>
+              <li onclick="showMarker('rainforest')">
+                <i class="fas fa-tree"></i> Emerald Rainforest
+              </li>
+              <li onclick="showMarker('village')">
+                <i class="fas fa-landmark"></i> Heritage Village
+              </li>
+              <li onclick="showMarker('marina')">
+                <i class="fas fa-ship"></i> Coral Marina
+              </li>
+              <li onclick="showMarker('falls')">
+                <i class="fas fa-water"></i> Diamond Falls
+              </li>
+            </ul>
+          </div>
+        </div> -->
+
+      <a href="/"
+        ><button class="btn btn-back" onclick="showPage('home')">
+          <i class="fas fa-arrow-left"></i> Back to Home
+        </button></a
+      >
+
+      <div class="attractions-grid">
+        <div class="attraction-card">
+          <img
+            src="https://images.unsplash.com/photo-1505228395891-9a51e7e86bf6?q=80&w=1633"
+            alt="Sapphire Beach"
+            class="attraction-img"
+          />
+          <div class="attraction-content">
+            <h3>
+              <i class="attraction-icon fas fa-umbrella-beach"></i> Sapphire
+              Beach
+            </h3>
+            <p>
+              Pristine white sands and crystal-clear waters perfect for
+              swimming, snorkeling, and sunset walks. Rated #1 beach in the
+              region by Travel Magazine.
+            </p>
+            <div class="attraction-info">
+              <div class="distance">
+                <i class="fas fa-location-arrow"></i> 1.2 km
+              </div>
+              <div class="travel-time">
+                <i class="fas fa-walking"></i> 15 min walk
+              </div>
+            </div>
+            <div class="attraction-highlights">
+              <span class="highlight">Snorkeling</span>
+              <span class="highlight">Beach Bar</span>
+              <span class="highlight">Water Sports</span>
+            </div>
+            <div class="btn">Explore</div>
+          </div>
+        </div>
+
+        <div class="attraction-card">
+          <img
+            src="https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=1470"
+            alt="Emerald Rainforest"
+            class="attraction-img"
+          />
+          <div class="attraction-content">
+            <h3>
+              <i class="attraction-icon fas fa-tree"></i> Emerald Rainforest
+            </h3>
+            <p>
+              Lush tropical rainforest with hiking trails, waterfalls, and
+              guided eco-tours. Home to over 200 species of birds and exotic
+              wildlife.
+            </p>
+            <div class="attraction-info">
+              <div class="distance">
+                <i class="fas fa-location-arrow"></i> 3.5 km
+              </div>
+              <div class="travel-time">
+                <i class="fas fa-car"></i> 10 min drive
+              </div>
+            </div>
+            <div class="attraction-highlights">
+              <span class="highlight">Hiking</span>
+              <span class="highlight">Waterfalls</span>
+              <span class="highlight">Wildlife</span>
+            </div>
+            <div class="btn">Explore</div>
+          </div>
+        </div>
+
+        <div class="attraction-card">
+          <img
+            src="https://images.unsplash.com/photo-1591803267839-48b9d6a0e9e0?q=80&w=1470"
+            alt="Heritage Village"
+            class="attraction-img"
+          />
+          <div class="attraction-content">
+            <h3>
+              <i class="attraction-icon fas fa-landmark"></i> Heritage Village
+            </h3>
+            <p>
+              Experience local culture, traditional crafts, and authentic
+              cuisine in this charming village. Night markets every Friday with
+              live music.
+            </p>
+            <div class="attraction-info">
+              <div class="distance">
+                <i class="fas fa-location-arrow"></i> 2.8 km
+              </div>
+              <div class="travel-time">
+                <i class="fas fa-bicycle"></i> 15 min bike
+              </div>
+            </div>
+            <div class="attraction-highlights">
+              <span class="highlight">Craft Market</span>
+              <span class="highlight">Local Cuisine</span>
+              <span class="highlight">Cultural Shows</span>
+            </div>
+            <div class="btn">Explore</div>
+          </div>
+        </div>
+
+        <div class="attraction-card">
+          <img
+            src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?q=80&w=1470"
+            alt="Coral Marina"
+            class="attraction-img"
+          />
+          <div class="attraction-content">
+            <h3><i class="attraction-icon fas fa-ship"></i> Coral Marina</h3>
+            <p>
+              Luxury yachts, sailing excursions, and waterfront dining with
+              spectacular ocean views. Sunset cruises available daily.
+            </p>
+            <div class="attraction-info">
+              <div class="distance">
+                <i class="fas fa-location-arrow"></i> 4.2 km
+              </div>
+              <div class="travel-time">
+                <i class="fas fa-car"></i> 12 min drive
+              </div>
+            </div>
+            <div class="attraction-highlights">
+              <span class="highlight">Boat Tours</span>
+              <span class="highlight">Seafood Dining</span>
+              <span class="highlight">Dolphin Watching</span>
+            </div>
+            <div class="btn">Explore</div>
+          </div>
+        </div>
+
+        <div class="attraction-card">
+          <img
+            src="https://images.unsplash.com/photo-1501426026826-31c667bdf23d?q=80&w=1476"
+            alt="Diamond Falls"
+            class="attraction-img"
+          />
+          <div class="attraction-content">
+            <h3><i class="attraction-icon fas fa-water"></i> Diamond Falls</h3>
+            <p>
+              Majestic 3-tier waterfall with natural swimming pools. Guided
+              tours include cliff jumping for the adventurous.
+            </p>
+            <div class="attraction-info">
+              <div class="distance">
+                <i class="fas fa-location-arrow"></i> 5.8 km
+              </div>
+              <div class="travel-time">
+                <i class="fas fa-car"></i> 15 min drive
+              </div>
+            </div>
+            <div class="attraction-highlights">
+              <span class="highlight">Swimming</span>
+              <span class="highlight">Hiking</span>
+              <span class="highlight">Photography</span>
+            </div>
+            <div class="btn">Explore</div>
+          </div>
+        </div>
+
+        <div class="attraction-card">
+          <img
+            src="https://images.unsplash.com/photo-1593111774240-d529f12e7d88?q=80&w=1470"
+            alt="Volcano Lookout"
+            class="attraction-img"
+          />
+          <div class="attraction-content">
+            <h3>
+              <i class="attraction-icon fas fa-mountain"></i> Volcano Lookout
+            </h3>
+            <p>
+              Panoramic views from the island's highest accessible point.
+              Sunrise tours available with breakfast included.
+            </p>
+            <div class="attraction-info">
+              <div class="distance">
+                <i class="fas fa-location-arrow"></i> 8.3 km
+              </div>
+              <div class="travel-time">
+                <i class="fas fa-car"></i> 25 min drive
+              </div>
+            </div>
+            <div class="attraction-highlights">
+              <span class="highlight">Sunrise Views</span>
+              <span class="highlight">Hiking</span>
+              <span class="highlight">Photo Spot</span>
+            </div>
+            <div class="btn">Explore</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="transportation">
+        <h3>Getting Around</h3>
+        <div class="transport-options">
+          <div class="transport-card">
+            <i class="fas fa-car"></i>
+            <h4>Car Rental</h4>
+            <p>Flexible exploration on your own schedule</p>
+          </div>
+          <div class="transport-card">
+            <i class="fas fa-bus"></i>
+            <h4>Shuttle Service</h4>
+            <p>Complimentary resort shuttle to main attractions</p>
+          </div>
+          <div class="transport-card">
+            <i class="fas fa-bicycle"></i>
+            <h4>Bike Rental</h4>
+            <p>Eco-friendly way to explore nearby areas</p>
+          </div>
+          <div class="transport-card">
+            <i class="fas fa-ship"></i>
+            <h4>Boat Tours</h4>
+            <p>Guided excursions to coastal attractions</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- </div> -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-links">
+          <div class="footer-logo">Paradise<span>Resort</span></div>
+          <p>
+            Luxury resort offering unforgettable experiences with stunning ocean
+            views and world-class amenities.
+          </p>
+          <div class="social-links">
+            <a href="#" class="social-icon"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-pinterest"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li>
+              <a href="#rooms" onclick="showPage('home')">Rooms & Suites</a>
+            </li>
+            <li><a href="#dining" onclick="showPage('home')">Dining</a></li>
+            <li><a href="#gallery" onclick="showPage('home')">Gallery</a></li>
+            <li>
+              <a href="#stories" onclick="showPage('home')">Our Stories</a>
+            </li>
+            <li>
+              <a href="#contact" onclick="showPage('home')">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Contact Info</h4>
+          <ul>
+            <li><i class="fas fa-map-marker-alt"></i> 123 Ocean Boulevard</li>
+            <li><i class="fas fa-phone"></i> +1 (800) 555-1234</li>
+            <li><i class="fas fa-envelope"></i> info@paradiseresort.com</li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Newsletter</h4>
+          <p>Subscribe to our newsletter for special offers and updates.</p>
+          <form class="mailchimp">
+            <input
+              class="email-box"
+              type="email"
+              placeholder="Your Email Address"
+              required
+            />
+            <button type="submit" class="btn">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2023 Paradise Resort. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

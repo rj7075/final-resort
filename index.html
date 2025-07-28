@@ -21,16 +21,15 @@
 
       <!-- DeskTop Menu -->
       <div class="nav-links">
-        <a href="#rooms" onclick="showPage('home')">Rooms</a>
-        <a href="#stories" onclick="showPage('home')">Our Stories</a>
+        <a href="#amenities" onclick="showPage('home')">Our Amenities</a>
+        <a href="#rooms">Rooms</a>
+        <a href="/nearattraction.html">Near By Attraction</a>
         <a href="#reviews" onclick="showPage('home')">Client Reviews</a>
         <a href="#gallery" onclick="showPage('home')">Gallery</a>
         <a href="#contact" onclick="showPage('home')">Contact</a>
-        <a
-          href="https://wa.me/919876543210?text=Hello%2C%20I%20am%20interested%20in%20your%20services"
-          onclick="showPage('home')"
-          ><button class="watsapp">Watsapp Us</button></a
-        >
+        <a href="tel:+919999999999">
+          <button class="watsapp">Call +91 9999999999</button>
+        </a>
       </div>
 
       <!-- mobile menu -->
@@ -40,11 +39,14 @@
       <div class="nav-links mobile-menu" id="mobileMenu">
         <ul class="menu-list">
           <li class="menu-name">
+            <a href="#amenities" onclick="showPage('home')">Our Amenities</a>
+          </li>
+          <li class="menu-name">
             <a href="#rooms" onclick="showPage('home'); closeMenu()">Rooms</a>
           </li>
           <li class="menu-name">
-            <a href="#stories" onclick="showPage('home'); closeMenu()"
-              >Our Stories</a
+            <a href="/nearattraction.html" onclick="closeMenu()"
+              >Near By Attraction</a
             >
           </li>
           <li class="menu-name">
@@ -63,11 +65,8 @@
             >
           </li>
           <li class="menu-name">
-            <a
-              href="https://wa.me/919876543210?text=Hello%2C%20I%20am%20interested%20in%20your%20services"
-              onclick="showPage('home'); closeMenu()"
-            >
-              <button class="watsapp">WhatsApp Us</button>
+            <a href="tel:+919999999999">
+              <button class="watsapp">Call +91 9999999999</button>
             </a>
           </li>
         </ul>
@@ -227,8 +226,219 @@
         </div>
       </section>
 
+      <!-- amenites letest -->
+
+      <section class="features page-padding" id="amenities">
+        <div class="section-title">
+          <h2>Premium Amenities</h2>
+          <p>Designed for an exceptional resort experience</p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-swimming-pool"></i>
+            </div>
+            <h3>Infinity Pool</h3>
+            <p>
+              Stunning infinity pool with panoramic ocean views, private
+              cabanas, and swim-up bar.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-dumbbell"></i>
+            </div>
+            <h3>Fitness Center</h3>
+            <p>
+              State-of-the-art gym with modern equipment, personal trainers, and
+              daily classes.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-tree"></i>
+            </div>
+            <h3>Tropical Gardens</h3>
+            <p>
+              Lush tropical gardens with meditation spaces and exotic botanical
+              displays.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <h3>24/7 Security</h3>
+            <p>
+              Comprehensive security with surveillance and discreet personnel
+              for your peace of mind.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-utensils"></i>
+            </div>
+            <h3>Gourmet Dining</h3>
+            <p>
+              Award-winning restaurants featuring international cuisine and
+              ocean-view terraces.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-spa"></i>
+            </div>
+            <h3>Ocean Spa</h3>
+            <p>
+              Luxury spa with ocean-view treatment rooms, sauna, steam room, and
+              relaxation pools.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Our Amenities Section -->
+
+      <!-- <section id="amenities" class="page-padding">
+        <div class="section-title">
+          <h2>Our Amenities</h2>
+          <p>
+            Discover the exceptional facilities and services that make your stay
+            unforgettable
+          </p>
+        </div>
+
+        <div class="amenities-slider-wrapper">
+          <button class="amenity-nav left" onclick="prevAmenity()">‹</button>
+
+          <div class="amenities-container" id="amenitySlider">
+            <div class="amenity-card" onclick="showAmenityDetails('pool')">
+              <img
+                src="https://images.unsplash.com/photo-1575429198097-0414ec08e8cd?q=80&w=1470"
+                alt="Infinity Pool"
+                class="amenity-img"
+              />
+              <div class="amenity-content">
+                <h3>
+                  <i class="amenity-icon fas fa-swimming-pool"></i> Infinity
+                  Pool
+                </h3>
+                <p>
+                  Our stunning horizon-edge pool offers breathtaking ocean views
+                  with premium lounge seating, private cabanas, and poolside
+                  service.
+                </p>
+                <div class="amenity-highlights">
+                  <span class="highlight">Heated</span>
+                  <span class="highlight">Swim-up Bar</span>
+                  <span class="highlight">Family Area</span>
+                </div>
+                <div class="amenity-footer">
+                  <div class="availability">
+                    <i class="fas fa-check-circle"></i> Open 6AM-10PM
+                  </div>
+                  <div class="btn">Explore</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="amenity-card" onclick="showAmenityDetails('spa')">
+              <img
+                src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=1470"
+                alt="Spa & Wellness"
+                class="amenity-img"
+              />
+              <div class="amenity-content">
+                <h3><i class="amenity-icon fas fa-spa"></i> Spa & Wellness</h3>
+                <p>
+                  Indulge in our world-class spa featuring therapeutic
+                  treatments, steam rooms, saunas, and a tranquil meditation
+                  garden.
+                </p>
+                <div class="amenity-highlights">
+                  <span class="highlight">Massage</span>
+                  <span class="highlight">Yoga Classes</span>
+                  <span class="highlight">Wellness Programs</span>
+                </div>
+                <div class="amenity-footer">
+                  <div class="availability">
+                    <i class="fas fa-check-circle"></i> By Appointment
+                  </div>
+                  <div class="btn">Explore</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="amenity-card" onclick="showAmenityDetails('dining')">
+              <img
+                src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1470"
+                alt="Gourmet Dining"
+                class="amenity-img"
+              />
+              <div class="amenity-content">
+                <h3>
+                  <i class="amenity-icon fas fa-utensils"></i> Gourmet Dining
+                </h3>
+                <p>
+                  Experience culinary excellence at our award-winning
+                  restaurants featuring international cuisine and
+                  locally-sourced ingredients.
+                </p>
+                <div class="amenity-highlights">
+                  <span class="highlight">Ocean View</span>
+                  <span class="highlight">Chef's Table</span>
+                  <span class="highlight">24/7 Room Service</span>
+                </div>
+                <div class="amenity-footer">
+                  <div class="availability">
+                    <i class="fas fa-check-circle"></i> Reservations Recommended
+                  </div>
+                  <div class="btn">Explore</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="amenity-card" onclick="showAmenityDetails('fitness')">
+              <img
+                src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1470"
+                alt="Fitness Center"
+                class="amenity-img"
+              />
+              <div class="amenity-content">
+                <h3>
+                  <i class="amenity-icon fas fa-dumbbell"></i> Fitness Center
+                </h3>
+                <p>
+                  State-of-the-art facility with premium equipment, personal
+                  training, and daily group fitness classes for all levels.
+                </p>
+                <div class="amenity-highlights">
+                  <span class="highlight">24/7 Access</span>
+                  <span class="highlight">Personal Trainers</span>
+                  <span class="highlight">Yoga Studio</span>
+                </div>
+                <div class="amenity-footer">
+                  <div class="availability">
+                    <i class="fas fa-check-circle"></i> Open 24 Hours
+                  </div>
+                  <div class="btn">Explore</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button class="amenity-nav right" onclick="nextAmenity()">›</button>
+        </div>
+      </section> -->
+
       <!-- Our Stories Section -->
-      <section id="stories" class="page-padding">
+      <!-- <section id="stories" class="page-padding">
         <div class="section-title">
           <h2>Our Stories</h2>
           <p>Discover memorable experiences shared by our guests</p>
@@ -287,7 +497,7 @@
 
           <button class="story-nav right" onclick="nextStory()">›</button>
         </div>
-      </section>
+      </section> -->
 
       <!-- Client Reviews Section -->
       <section class="reviews page-padding" id="reviews">
@@ -625,8 +835,209 @@
       </div>
     </section>
 
+    <!-- Near by Attraction Section start-->
+    <section class="page-section page-padding" id="nearby-attractions">
+      <div class="section-title">
+        <h2>Nearby Attractions</h2>
+        <p>Experience the best our tropical paradise has to offer</p>
+      </div>
+
+      <button class="btn btn-back" onclick="showPage('home')">
+        <i class="fas fa-arrow-left"></i> Back to Rooms
+      </button>
+
+      <div class="attractions-grid">
+        <div class="attraction-card">
+          <img
+            src="https://images.unsplash.com/photo-1505228395891-9a51e7e86bf6?q=80&w=1633"
+            alt="Sapphire Beach"
+            class="attraction-img"
+          />
+          <div class="attraction-content">
+            <h3>
+              <i class="attraction-icon fas fa-umbrella-beach"></i> Sapphire
+              Beach
+            </h3>
+            <p>
+              Pristine white sands and crystal-clear waters perfect for
+              swimming, snorkeling, and sunset walks. Rated #1 beach in the
+              region by Travel Magazine.
+            </p>
+            <div class="attraction-info">
+              <div class="distance">
+                <i class="fas fa-location-arrow"></i> 1.2 km
+              </div>
+              <div class="travel-time">
+                <i class="fas fa-walking"></i> 15 min walk
+              </div>
+            </div>
+            <div class="attraction-highlights">
+              <span class="highlight">Snorkeling</span>
+              <span class="highlight">Beach Bar</span>
+              <span class="highlight">Water Sports</span>
+            </div>
+            <div class="btn">Explore</div>
+          </div>
+        </div>
+
+        <div class="attraction-card">
+          <img
+            src="https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=1470"
+            alt="Emerald Rainforest"
+            class="attraction-img"
+          />
+          <div class="attraction-content">
+            <h3>
+              <i class="attraction-icon fas fa-tree"></i> Emerald Rainforest
+            </h3>
+            <p>
+              Lush tropical rainforest with hiking trails, waterfalls, and
+              guided eco-tours. Home to over 200 species of birds and exotic
+              wildlife.
+            </p>
+            <div class="attraction-info">
+              <div class="distance">
+                <i class="fas fa-location-arrow"></i> 3.5 km
+              </div>
+              <div class="travel-time">
+                <i class="fas fa-car"></i> 10 min drive
+              </div>
+            </div>
+            <div class="attraction-highlights">
+              <span class="highlight">Hiking</span>
+              <span class="highlight">Waterfalls</span>
+              <span class="highlight">Wildlife</span>
+            </div>
+            <div class="btn">Explore</div>
+          </div>
+        </div>
+
+        <div class="attraction-card">
+          <img
+            src="https://images.unsplash.com/photo-1591803267839-48b9d6a0e9e0?q=80&w=1470"
+            alt="Heritage Village"
+            class="attraction-img"
+          />
+          <div class="attraction-content">
+            <h3>
+              <i class="attraction-icon fas fa-landmark"></i> Heritage Village
+            </h3>
+            <p>
+              Experience local culture, traditional crafts, and authentic
+              cuisine in this charming village. Night markets every Friday with
+              live music.
+            </p>
+            <div class="attraction-info">
+              <div class="distance">
+                <i class="fas fa-location-arrow"></i> 2.8 km
+              </div>
+              <div class="travel-time">
+                <i class="fas fa-bicycle"></i> 15 min bike
+              </div>
+            </div>
+            <div class="attraction-highlights">
+              <span class="highlight">Craft Market</span>
+              <span class="highlight">Local Cuisine</span>
+              <span class="highlight">Cultural Shows</span>
+            </div>
+            <div class="btn">Explore</div>
+          </div>
+        </div>
+
+        <div class="attraction-card">
+          <img
+            src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?q=80&w=1470"
+            alt="Coral Marina"
+            class="attraction-img"
+          />
+          <div class="attraction-content">
+            <h3><i class="attraction-icon fas fa-ship"></i> Coral Marina</h3>
+            <p>
+              Luxury yachts, sailing excursions, and waterfront dining with
+              spectacular ocean views. Sunset cruises available daily.
+            </p>
+            <div class="attraction-info">
+              <div class="distance">
+                <i class="fas fa-location-arrow"></i> 4.2 km
+              </div>
+              <div class="travel-time">
+                <i class="fas fa-car"></i> 12 min drive
+              </div>
+            </div>
+            <div class="attraction-highlights">
+              <span class="highlight">Boat Tours</span>
+              <span class="highlight">Seafood Dining</span>
+              <span class="highlight">Dolphin Watching</span>
+            </div>
+            <div class="btn">Explore</div>
+          </div>
+        </div>
+
+        <div class="attraction-card">
+          <img
+            src="https://images.unsplash.com/photo-1501426026826-31c667bdf23d?q=80&w=1476"
+            alt="Diamond Falls"
+            class="attraction-img"
+          />
+          <div class="attraction-content">
+            <h3><i class="attraction-icon fas fa-water"></i> Diamond Falls</h3>
+            <p>
+              Majestic 3-tier waterfall with natural swimming pools. Guided
+              tours include cliff jumping for the adventurous.
+            </p>
+            <div class="attraction-info">
+              <div class="distance">
+                <i class="fas fa-location-arrow"></i> 5.8 km
+              </div>
+              <div class="travel-time">
+                <i class="fas fa-car"></i> 15 min drive
+              </div>
+            </div>
+            <div class="attraction-highlights">
+              <span class="highlight">Swimming</span>
+              <span class="highlight">Hiking</span>
+              <span class="highlight">Photography</span>
+            </div>
+            <div class="btn">Explore</div>
+          </div>
+        </div>
+
+        <div class="attraction-card">
+          <img
+            src="https://images.unsplash.com/photo-1593111774240-d529f12e7d88?q=80&w=1470"
+            alt="Volcano Lookout"
+            class="attraction-img"
+          />
+          <div class="attraction-content">
+            <h3>
+              <i class="attraction-icon fas fa-mountain"></i> Volcano Lookout
+            </h3>
+            <p>
+              Panoramic views from the island's highest accessible point.
+              Sunrise tours available with breakfast included.
+            </p>
+            <div class="attraction-info">
+              <div class="distance">
+                <i class="fas fa-location-arrow"></i> 8.3 km
+              </div>
+              <div class="travel-time">
+                <i class="fas fa-car"></i> 25 min drive
+              </div>
+            </div>
+            <div class="attraction-highlights">
+              <span class="highlight">Sunrise Views</span>
+              <span class="highlight">Hiking</span>
+              <span class="highlight">Photo Spot</span>
+            </div>
+            <div class="btn">Explore</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Near by Attraction Section start-->
+
     <!-- Story Details Page -->
-    <section id="story-details-page" class="page-section">
+    <!-- <section id="story-details-page" class="page-section">
       <div class="story-details-container">
         <button class="btn btn-back" onclick="showPage('home')">
           <i class="fas fa-arrow-left"></i> Back to Stories
@@ -642,7 +1053,7 @@
         </div>
 
         <div class="story-content" id="story-content">
-          <!-- Filled by JavaScript -->
+          Filled by JavaScript 
         </div>
 
         <div class="related-stories">
@@ -681,7 +1092,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- Footer -->
     <footer>
