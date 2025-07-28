@@ -22,7 +22,7 @@
       <!-- DeskTop Menu -->
       <div class="nav-links">
         <a href="/" onclick="showPage('home')">Home</a>
-        <a href="/rooms.html" onclick="showPage('home')">Rooms</a>
+        <a href="/rooms.html" onclick="showPage('home')"> All Rooms</a>
 
         <!-- <a href="#reviews" onclick="showPage('home')">Client Reviews</a>
         <a href="#gallery" onclick="showPage('home')">Gallery</a>
@@ -39,11 +39,15 @@
       <div class="nav-links mobile-menu" id="mobileMenu">
         <ul class="menu-list">
           <li class="menu-name">
-            <a href="/rooms.html" onclick="showPage('home'); closeMenu()"
-              >Rooms</a
+            <a href="/" onclick="showPage('home'); closeMenu()">Home</a>
+          </li>
+
+          <li class="menu-name">
+            <a href="/rooms.html" onclick="showPage('home'); closeMenu()">
+              All Rooms</a
             >
           </li>
-          <li class="menu-name">
+          <!-- <li class="menu-name">
             <a
               href="/nearattraction.html"
               onclick="showPage('home'); closeMenu()"
@@ -59,14 +63,14 @@
             <a href="#gallery" onclick="showPage('home'); closeMenu()"
               >Gallery</a
             >
-          </li>
+          </li> 
           <li class="menu-name">
             <a href="#contact" onclick="showPage('home'); closeMenu()"
               >Contact</a
             >
-          </li>
+          </li> -->
           <li class="menu-name">
-            <a href="tel:+919999999999">
+            <a href="tel:+919999999999" onclick="showPage('home'); closeMenu()">
               <button class="watsapp">Call +91 9999999999</button>
             </a>
           </li>
