@@ -1082,7 +1082,7 @@
                 font-size: 1rem;
             }
              .hero {
-                height: 465px;
+                height: 565px !important;
             }
             
             .attractions-grid {
