@@ -202,7 +202,7 @@
 
       .hero h1 {
         font-size: 3.5rem;
-        margin-bottom: 1rem;
+        margin-bottom: 0rem;
         animation: fadeInDown 1s ease;
       }
       .hero h1 span {
@@ -1041,7 +1041,7 @@
             }
             
             .hero {
-                height: 400px;
+                height: 465px;
             }
             
             .hero h1 {
@@ -2217,7 +2217,7 @@
 
         /* Responsive padding */
         #rooms, #dining, #stories, #reviews, #gallery, #contact {
-          padding: 3rem 0;
+          padding: 2.5rem 0;
         }
       }
 
