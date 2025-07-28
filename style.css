@@ -1041,7 +1041,7 @@
             }
             
             .hero {
-                height: 465px;
+                height: 565px !important;
             }
             
             .hero h1 {
@@ -1080,6 +1080,9 @@
             
             .section-title p {
                 font-size: 1rem;
+            }
+             .hero {
+                height: 465px;
             }
             
             .attractions-grid {
