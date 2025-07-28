@@ -1027,12 +1027,12 @@
 
           @media (max-width: 600px) {
                    .btn-hero{
-              margin-top: 15rem !important;
+              margin-top: 16rem !important;
 
 
             }
             .hero-heading{
-               margin-top: -3.5rem !important;
+               margin-top: -2.5rem !important;
             }
           }
         @media (max-width: 768px) {
